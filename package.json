@@ -1,0 +1,31 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "Desktop app that helps you concentrate using the Pomodoro Technique",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekmulay/pomodoro.git"
+  },
+  "keywords": [
+    "electron",
+    "js"
+  ],
+  "author": "Abhishek Mulay <abhishek_mulay@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abhishekmulay/pomodoro/issues"
+  },
+  "homepage": "https://github.com/abhishekmulay/pomodoro#readme",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "electron-settings": "^3.1.1",
+    "moment": "^2.18.1"
+  }
+}

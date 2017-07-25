@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pomodoro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Local bootstrap is better when we don't have internet connection-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  </head>
+  <body>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <!--We are using Node.js <script>document.write(process.versions.node)</script>,-->
+    <!--Chromium <script>document.write(process.versions.chrome)</script>,-->
+    <!--and Electron <script>document.write(process.versions.electron)</script>.-->
+
+
+  <div id="root">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Pomodoro technique</h1>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-xs-12">
+          <div class="form-group">
+            <button class="form-control btn btn-primary" id="start-btn">Start!</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
