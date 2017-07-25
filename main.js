@@ -1,4 +1,4 @@
-const { ipcMain } = require('electron');
+const {ipcMain} = require('electron');
 const electron = require('electron');
 // Module to control application life.
 const app = electron.app;
@@ -12,15 +12,15 @@ const url = require('url');
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
 
-function createWindow () {
+function createWindow() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({width: 800, height: 600});
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
     protocol: 'file:',
-    slashes: true
+    slashes : true
   }));
 
   // Open the DevTools.
@@ -33,6 +33,9 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+
+  // make app full screen by default
+  mainWindow.setFullScreen(true);
 }
 
 // This method will be called when Electron has finished
